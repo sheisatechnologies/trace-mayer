@@ -245,7 +245,7 @@ body {
 
     .main-h1{
     width: 100%;
-    max-width: 293px;
+    /* max-width: 293px; */
     font-size: 59px;
     line-height: 54px;
     font-weight: 700;
@@ -260,7 +260,7 @@ body {
 
    .main-p2{
     width: 100%;
-    max-width: 227px;
+    /* max-width: 227px; */
     font-size: 18px;
     font-weight: 700;
     line-height: 30px;
