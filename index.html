@@ -35,8 +35,7 @@
 
     .navbar {
         background-color: black;
-        padding-left: 150px !important;
-        padding-right: 150px !important;
+       
     }
 
     .orange-section {
@@ -54,6 +53,12 @@
         font-size: 18px;
         font-weight: 600;
     }
+
+    .navbar-brand {
+    margin: 0; /* Ensure no extra space */
+    padding: 0; /* Reset padding to avoid inconsistencies */
+}
+
 
     .navbar-brand{
         color: #FF7900;
@@ -87,16 +92,6 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 30px;
-   }
-
-   .btn{
-    border-radius: 30px;
-    background-color: #FF7900;
-    color: white;
-    font-size: 18px;
-    font-weight: 400;
-    height: 56px;
-    width: 160px;
    }
 
    .orange-h1{
@@ -203,8 +198,7 @@
 
     .navbar {
     background-color: black;
-    padding-left: 12px !important;
-    padding-right: 12px !important;
+    
 }
     
     .navbar-brand{
@@ -221,7 +215,8 @@
     
 
     .main-h1{
-    width: 293px;
+    width: 100%;
+    max-width: 293px;
     font-size: 59px;
     line-height: 54px;
     font-weight: 700;
@@ -235,23 +230,15 @@
    }
 
    .main-p2{
-    width: 227px;
+    width: 100%;
+    max-width: 227px;
     font-size: 18px;
     font-weight: 700;
     line-height: 30px;
     text-align: left;
    }
 
-   .btn {
-    border-radius: 30px;
-    background-color: #FF7900;
-    color: white;
-    font-size: 18px;
-    font-weight: 700;
-    height: 56px;
-    width: 160px;
    
-}
 
     .orange-h1{
     font-size: 46px;
@@ -319,12 +306,12 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark py-5">
         <div class="container">
-            <a class="navbar-brand" href="#">Trace Mayer</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand px-md-5 px-2" href="#">Trace Mayer</a>
+            <button class="navbar-toggler px-3 px-md-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                <img src="asset/images/toggle.svg">
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto px-md-5">
                     <li class="nav-item">
                         <a class="nav-link active" href="#">Home</a>
                     </li>
@@ -355,7 +342,7 @@
                 <p class="mt-3 main-p2">
                     A core purpose of Trace Mayer is to be a champion of monetary sovereignty through non-violent cryptographic means for individuals to protect and preserve their agency and freedom from oppression in the very controversial political battle over money and property rights.
                 </p>
-                <a href="#" class="btn btn-lg mt-5 ">About</a>
+                <button type="submit" class="btn1">About</button>
             </div>
             <!-- Image Section -->
             <div class="col-md-6">
@@ -371,12 +358,12 @@
             <div class="row text-center">
                 <div class="col-md-6">
                     <img src="asset/images/Container.png" alt="Speaking" class="img-fluid rounded p-md-5">
-                    <h4 class=" text-start px-md-5 orange-h4">Speaking</h4>
+                    <h4 class=" text-start px-md-5 orange-h4 mt-2 mt-md-0">Speaking</h4>
                     <p class="text-start px-md-5 orange-p">Due to being busy with other pursuits, Trace is no longer taking speaking requests.</p>
                 </div>
                 <div class="col-md-6">
                     <img src="asset/images/Container (1).png" alt="Investments" class="img-fluid rounded p-md-5">
-                    <h4 class="text-start px-md-5 orange-h4">Investments</h4>
+                    <h4 class="text-start px-md-5 orange-h4 mt-2 mt-md-0">Investments</h4>
                     <p class="text-start px-md-5 orange-p">There have been several blockchain-related investments made.</p>
                 </div>
             </div>
@@ -410,7 +397,7 @@
     <div class="w-100 bg-light py-5 px-md-5">
         <div class="container">
             <div class="row mx-0 align-items-center justify-content-between">
-                <div class="col-md-4 text-start px-4 px-md-0">
+                <div class="col-md-4 text-start px-4">
                     <h5 class="footer-head1 mb-0 px-md-4">Let’s Keep in Touch</h5>
                 </div>
                 <div class="col-md-8 text-center text-md-end px-md-5 py-2 py-md-0 px-4">
@@ -434,7 +421,7 @@
     
     <!-- Footer Links -->
     <div class="container px-4 p-md-0 py-5 py-md-0">
-        <div class="row">
+        <div class="row px-md-4">
             <!-- Trace Mayer -->
             <div class="col-md-8 p-md-5">
                 <h5 class="footer-head">Trace Mayer</h5>
