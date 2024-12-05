@@ -1,0 +1,331 @@
+/* BRETTENHAM HOUSE
+/* OTHER ALIAS LTD
+/* ---------------------------------------------- */
+
+/* ---------------------------------------------- */
+/* VARIABLES
+/* ---------------------------------------------- */
+:root {
+    --blue: #0048C6;
+    --teal: #62BCB3;
+    --green: #168771;
+    --orange: #FF4602;
+    --mustard: #FF9222;
+    --black: #000000;
+    --white: #FFFFFF;
+    --off-black: #333333;
+    --grey: #B6B6B6FF;
+    --light-grey: #ECF5F5;
+    --ziggurat: #BDE2DF;
+    --breaker-bay: #6CA6A2;
+    --edgewater: #CAE2E0;
+}
+
+body {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-y: scroll; /* Add vertical scrollbar */
+}
+
+.bg-pan{
+    background-color: var(--blue) !important;
+}
+/* ---------------------------------------------- */
+/* @FONT-FACE
+/* ---------------------------------------------- */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+    body {
+        background-color: black;
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+        overflow-y: scroll; /* Add vertical scrollbar */
+    }
+
+
+
+    .navbar {
+        background-color: black;
+       
+    }
+
+    .orange-section {
+        background-color: #FF7900;
+        padding: 50px 0;
+    }
+
+    .dark-section {
+        background-color: black;
+        padding: 50px 0;
+    }
+
+    .nav-link{
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .navbar-brand {
+    margin: 0; /* Ensure no extra space */
+    padding: 0; /* Reset padding to avoid inconsistencies */
+}
+
+
+    .navbar-brand{
+        color: #FF7900;
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    /* Custom color for active nav link */
+    .nav-link.active {
+    color: #FF7900 !important; /* Custom color (Tomato) */
+    font-weight: bold;
+    }
+
+    /* Optional: Hover effect */
+   .nav-link:hover {
+   color: #FF7900; /* Gold */
+   }
+
+   .main-p1{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'DM Sans';
+   }
+   .main-h1{
+    font-size: 86px;
+    line-height: 87px;
+    font-weight: 700;
+    letter-spacing: -2px;
+    font-family: 'DM Sans';
+   }
+
+   .main-p2{
+    width: 427px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    font-family: 'DM Sans';
+   
+   }
+
+   .orange-h1{
+    font-size: 66px;
+    font-weight: 700;
+    line-height: 86px;
+    font-family: 'DM Sans';
+   }
+
+   .orange-h4{
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: 700;
+    font-family: 'DM Sans';
+   }
+
+   .orange-p{
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 400;
+    font-family: 'DM Sans';
+   }
+
+   .dark-h5{
+    color: #119DA4;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: 'DM Sans';
+   }
+
+   .dark-head{
+    color: #FF7900;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 33.8px;
+    font-family: 'DM Sans';
+   }
+
+   .dark-para{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: 'DM Sans';
+   }
+
+   .footer-head{
+    font-size: 23px;
+    font-weight: 700;
+    font-family: 'DM Sans';
+
+   }
+
+   .footer-para{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+   }
+
+   .footer-li{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+   }
+
+   .icons{
+    font-size: 24px;
+    font-weight: 400;
+   }
+
+
+   .footer-head1{
+    font-size: 34px;
+    font-weight: 400;
+
+   }
+
+   .form-control{
+    width: 643px;
+    height: 56px;
+    border-radius: 30px;
+   }
+
+   .btn1{
+    width: 160px;
+    height: 56px;
+    background-color:#FF7900;
+    border-radius: 40px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+   }
+
+
+   .navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+
+   @media (max-width: 991px) {
+    body {
+       
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+        overflow-y: scroll; /* Add vertical scrollbar */
+    }
+
+
+    .navbar {
+    background-color: black;
+    
+}
+    
+    .navbar-brand{
+        color: #FF7900;
+        font-size: 26px;
+        font-weight: 700;
+    }
+
+
+    .main-contain{
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+    
+
+    .main-h1{
+    width: 100%;
+    max-width: 293px;
+    font-size: 59px;
+    line-height: 54px;
+    font-weight: 700;
+    text-align: left;
+   }
+
+   .main-p1{
+    font-size: 10.3px;
+    font-weight: 400;
+    text-align: left;
+   }
+
+   .main-p2{
+    width: 100%;
+    max-width: 227px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+   }
+
+   
+
+    .orange-h1{
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 69px;
+   }
+
+   .orange-h4{
+    font-size: 28px;
+    font-weight: 700;
+   }
+
+   .orange-p{
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 400;
+   }
+
+
+   
+   .dark-h5{
+    color: #119DA4;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
+    text-align: left;
+   }
+
+   .dark-head{
+    color: #FF7900;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 33.8px;
+    text-align: left;
+   }
+
+   .dark-para{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+   }
+
+
+
+
+   
+
+
+   
+
+   }
+
+
+   
+
+
+      
+    
