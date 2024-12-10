@@ -417,7 +417,7 @@ body {
 
 
 /* Responsive behavior for 1196px or smaller */
-@media (max-width: 1196px) {
+@media (max-width: 991px) {
     .main-contain .row {
         flex-direction: column; /* Stack the columns vertically */
         align-items: center; /* Center align the content */
@@ -432,6 +432,29 @@ body {
     
 
    
+}
+
+
+@media (min-width: 991px) and (max-width: 1096px){
+    .main-contain img {
+        height: auto;
+        max-height: 100%;
+        object-fit: cover;
+        align-self: flex-end;
+        padding-top: 322px;
+       
+}
+}
+
+@media (min-width: 1097px) and (max-width: 1196px){
+    .main-contain img {
+        height: auto;
+        max-height: 100%;
+        object-fit: cover;
+        align-self: flex-end;
+        padding-top: 322px;
+       
+    }
 }
 
    
