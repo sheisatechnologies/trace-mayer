@@ -252,6 +252,7 @@ body {
     max-height: 100%; /* Ensure the image doesn't overflow */
     object-fit: cover; /* Keep the image aspect ratio */
     align-self: flex-end; /* Align the image to the bottom */
+    padding-top: 48px;
   }
   @media (min-width: 1400px) {
     .main-p1 {
@@ -377,6 +378,10 @@ body {
     margin-top: -17px;
    }
 
+   .orange-section img {
+    border-radius: 14px !important; /* Ensure the border radius is applied */
+}
+
 
 
 
@@ -393,6 +398,44 @@ body {
     margin-top: -27px !important;
    }
    }
+
+
+
+
+@media (min-width: 768px) {
+    .orange-section img {
+        border-radius: 60px !important; /* Ensure the border radius is applied */
+    }
+}
+
+/* For screens larger than 1024px (desktop and larger tablets) */
+@media (min-width: 1024px) {
+    .orange-section img {
+        border-radius: 60px !important;  /* Ensure border radius is applied on desktop */
+    }
+}
+
+
+/* Responsive behavior for 1196px or smaller */
+@media (max-width: 1196px) {
+    .main-contain .row {
+        flex-direction: column; /* Stack the columns vertically */
+        align-items: center; /* Center align the content */
+    }
+
+    .main-contain .col-md-6,
+    .main-contain .col-lg-7 {
+        width: 100%; /* Make columns take full width */
+        text-align: center; /* Center-align text and content */
+    }
+
+    
+
+   
+}
+
+   
+
 
 
    
