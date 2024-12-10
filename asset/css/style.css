@@ -444,6 +444,20 @@ body {
         padding-top: 322px;
        
 }
+.main-h1 {
+    font-size: 59px;
+    line-height: 58px;
+    font-weight: 700;
+    letter-spacing: -2px;
+    font-family: 'DM Sans';
+}
+.main-p1 {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'DM Sans';
+    line-height: 50px;
+    letter-spacing: 1px;
+}
 }
 
 @media (min-width: 1097px) and (max-width: 1196px){
@@ -454,6 +468,22 @@ body {
         align-self: flex-end;
         padding-top: 322px;
        
+    }
+
+    .main-h1 {
+        font-size: 59px;
+        line-height: 58px;
+        font-weight: 700;
+        letter-spacing: -2px;
+        font-family: 'DM Sans';
+    }
+
+    .main-p1 {
+        font-size: 12px;
+        font-weight: 400;
+        font-family: 'DM Sans';
+        line-height: 50px;
+        letter-spacing: 1px;
     }
 }
 
