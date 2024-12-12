@@ -269,6 +269,59 @@ body {
     align-self: flex-end; /* Align the image to the bottom */
     padding-top: 56px;
   }
+
+
+  .yellow-highlight {
+    position: relative;
+    margin-left: 40px; /* Space between the yellow line and the text */
+    margin-bottom: 1rem; /* Adjust vertical spacing */
+    font-style: italic; /* Optional for styling */
+    color: #fff; /* Text color */
+}
+
+/* Small yellow line using ::before */
+.yellow-highlight::before {
+    content: "";
+    position: absolute;
+    width: 4px; /* Thickness of the line */
+    height: 100%; /* Height of the yellow line */
+    background-color: #FF8C00; /* Yellow color */
+    left: 0; /* Align to the left */
+    top: 0; /* Center it relative to the text */
+}
+
+
+.resources-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  .resource-item {
+    text-align: center;
+  }
+  .resource-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  .resource-item a {
+    color: #f90; /* Orange link */
+    text-decoration: none;
+    
+  }
+  .resource-item a:hover {
+    text-decoration: underline;
+  }
+
+  .yt-vid{
+   width: 100%;
+   max-width: 852px;
+   height: 478px;
+  }
+
+
+
+
   @media (min-width: 1400px) {
     .main-p1 {
         font-size: 16px;
