@@ -502,6 +502,21 @@ body {
         text-align: center; /* Center-align text and content */
     }
 
+    .yellow-highlight {
+        position: relative;
+        margin-left: 9px;
+        margin-bottom: 1rem;
+        font-style: italic;
+        color: #fff;
+    }
+
+    .yt-vid{
+        width: 100%;
+        max-width: 393px;
+        height: 220px;
+       }
+     
+
     
 
    
