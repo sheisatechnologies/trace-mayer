@@ -76,6 +76,55 @@ body {
     padding: 0; /* Reset padding to avoid inconsistencies */
 }
 
+.navbar-toggler-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.navbar-toggler-icon .line {
+    background-color: #FF8C00;
+    height: 2px;
+    border-radius: 1px;
+    width: 100%;
+    position: absolute;
+    transition: all 0.3s ease;
+}
+
+/* Line positions for hamburger */
+.navbar-toggler-icon .line:nth-child(1) {
+    top: 0;
+}
+
+.navbar-toggler-icon .line:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navbar-toggler-icon .line:nth-child(3) {
+    bottom: 0;
+}
+
+/* Cross icon styling */
+.navbar-toggler.open .line:nth-child(1) {
+    transform: rotate(45deg);
+    top: 50%;
+}
+
+.navbar-toggler.open .line:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggler.open .line:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 50%;
+}
+
 
     .navbar-brand{
         color: #FF7900;
@@ -273,8 +322,9 @@ body {
 
   .yellow-highlight {
     position: relative;
-    margin-left: 40px; /* Space between the yellow line and the text */
+    margin-left: 74px; /* Space between the yellow line and the text */
     margin-bottom: 1rem; /* Adjust vertical spacing */
+    font-family: Georgia;
     font-style: italic; /* Optional for styling */
     color: #fff; /* Text color */
 }
@@ -318,6 +368,42 @@ body {
    max-width: 852px;
    height: 478px;
   }
+
+
+  /* Footer Link Style */
+
+  .list-unstyled a {
+    position: relative; /* Make sure the pseudo-element is positioned relative to the link */
+    text-decoration: none; /* Remove the default underline */
+    color: inherit; /* Use the parent link color */
+}
+
+.list-unstyled a:hover {
+    color: black !important; /* Change text color on hover */
+}
+
+.list-unstyled a::after {
+    content: ''; /* Create the pseudo-element */
+    position: absolute;
+    bottom: 0; /* Position it at the bottom of the link */
+    left: 0; /* Align it with the left side */
+    width: 0; /* Start with zero width */
+    height: 2px; /* Set the height of the underline */
+    background-color: var(--off-black); /* Set the color of the underline */
+    transition: width 0.4s ease; /* Animate the width */
+}
+
+.list-unstyled a:hover::after {
+    width: 100%; /* On hover, expand the underline to 100% */
+}
+
+
+
+
+.text-link{
+    color: white;
+}
+
 
 
 

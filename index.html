@@ -32,34 +32,46 @@
 
 <body class="text-white">
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark py-5">
-        <div class="container">
-            <a class="navbar-brand px-md-5 px-2" href="#"><img src="assets/images/trace_logo.svg"></a>
-            <button class="navbar-toggler px-3 px-md-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-               <img src="assets/images/toggle.svg">
-            </button>
-            <div class="px-3 collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto px-md-5 pt-4 pt-md-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="story.html">My Story</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="investments.html">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="speaking.html">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
+ <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark py-5">
+    <div class="container">
+        <a href="index.html" class="navbar-brand px-md-5 px-2">
+            <img src="assets/images/trace_logo.svg" alt="Logo" class="logo">
+        </a>
+        
+        <button class="navbar-toggler px-3 px-md-0" id="navbarToggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- Single icon container -->
+            <div class="navbar-toggler-icon">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
             </div>
+        </button>
+        <div class="px-3 collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto px-md-5 pt-4 pt-md-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="story.html">My Story</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="investments.html">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="speaking.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
+
+
+
+
 
     <!-- Main Section -->
     <div class="container main-contain d-flex align-items-start justify-content-center">
@@ -168,7 +180,7 @@
             <div class="col-md-2 p-md-5 py-4 py-0">
                 <h5 class="footer-head">Projects</h5>
                 <ul class="list-unstyled">
-                    <li><a href="#" class="text-black footer-li" style="text-decoration: none;">Project 1</a></li>
+                    <li><a href="#" class="text-black footer-li">Project 1</a></li>
                     <li><a href="#" class="text-black footer-li" style="text-decoration: none;">Project 2</a></li>
                     <li><a href="#" class="text-black footer-li" style="text-decoration: none;">Project 3</a></li>
                     <li><a href="#" class="text-black footer-li" style="text-decoration: none;">Project 4</a></li>
@@ -194,5 +206,31 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+    const navbarToggler = document.getElementById("navbarToggler");
+    const navbarCollapse = document.getElementById("navbarNav");
+
+    navbarToggler.addEventListener("click", () => {
+        const isExpanded = navbarToggler.getAttribute("aria-expanded") === "true";
+
+        // Toggle the "open" class on the navbar-toggler
+        navbarToggler.classList.toggle("open", !isExpanded);
+    });
+
+    navbarCollapse.addEventListener("hidden.bs.collapse", () => {
+        // Remove the "open" class when the menu is fully closed
+        navbarToggler.classList.remove("open");
+    });
+
+    navbarCollapse.addEventListener("shown.bs.collapse", () => {
+        // Add the "open" class when the menu is fully opened
+        navbarToggler.classList.add("open");
+    });
+});
+
+
+
+    </script>
 </body>
 </html>
