@@ -68,7 +68,7 @@ body {
     .nav-link{
         color: white;
         font-size: 18px;
-        font-weight: 600;
+        font-weight: 500;
     }
 
     .navbar-brand {
@@ -176,7 +176,7 @@ body {
    .main-p2{
     width: 427px;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 30px;
     font-family: 'DM Sans';
     z-index: 1;
