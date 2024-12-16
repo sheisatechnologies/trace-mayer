@@ -422,6 +422,12 @@ body {
   }
 
    @media (max-width: 991px) {
+
+    .img-fluid-invest {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
     body {
        
         overflow-x: hidden; /* Hide horizontal scrollbar */
@@ -692,10 +698,20 @@ body {
     
 .hover-underline {
     text-decoration: none; /* Removes default underline */
+    color: white;
+    
+  }
+
+  .hover-underline2 {
+    text-decoration: none; /* Removes default underline */
+    color: #FF7900;
     
   }
   
   .hover-underline:hover {
+    text-decoration: underline; /* Removes default underline */
+  }
+  .hover-underline2:hover {
     text-decoration: underline; /* Removes default underline */
   }
   
