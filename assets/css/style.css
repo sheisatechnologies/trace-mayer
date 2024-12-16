@@ -197,6 +197,7 @@ body {
     font-family: 'DM Sans';
     line-height: 28px;
     letter-spacing: -0.2px;
+    color: white;
    }
 
    .orange-p{
@@ -490,6 +491,7 @@ body {
     font-weight: 700;
     line-height: 28px;
     letter-spacing: -0.2px;
+    color: white;
    }
 
    .orange-p{
@@ -680,7 +682,18 @@ body {
 
 
    
-
+.text-link:hover {
+    text-decoration: none; /* Ensures no underline on hover */
+  }
 
       
     
+.hover-underline {
+    text-decoration: none; /* Removes default underline */
+    
+  }
+  
+  .hover-underline:hover {
+    text-decoration: underline; /* Removes default underline */
+  }
+  
