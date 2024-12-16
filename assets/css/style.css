@@ -602,6 +602,19 @@ body {
         max-width: 393px;
         height: 220px;
        }
+
+    .logo1{
+        max-width: 90%;
+    }
+
+    .logo2{
+        max-width: 50% !important;
+        margin-left: 0px !important;
+    }
+
+    .logo3{
+        max-width: 60%;
+    }
      
 
     
