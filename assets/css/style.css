@@ -679,8 +679,10 @@ body {
 
    
 
-
-
+.img-fluid-invest {
+    max-width: 100%;
+    height: 50px;
+}
    
 .text-link:hover {
     text-decoration: none; /* Ensures no underline on hover */
