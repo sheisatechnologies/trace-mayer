@@ -77,18 +77,19 @@ body {
     padding: 0; /* Reset padding to avoid inconsistencies */
 }
 
-.navbar-toggler-icon {
+.navbar-toggler {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 24px;
-    height: 20px;
+    height: 26px;
     position: relative;
     cursor: pointer;
     transition: transform 0.3s ease;
+    border: none;
 }
 
-.navbar-toggler-icon .line {
+.navbar-toggler .line {
     background-color: #FF8C00;
     height: 2px;
     border-radius: 1px;
@@ -98,16 +99,16 @@ body {
 }
 
 /* Line positions for hamburger */
-.navbar-toggler-icon .line:nth-child(1) {
+.navbar-toggler .line:nth-child(1) {
     top: 0;
 }
 
-.navbar-toggler-icon .line:nth-child(2) {
+.navbar-toggler .line:nth-child(2) {
     top: 50%;
     transform: translateY(-50%);
 }
 
-.navbar-toggler-icon .line:nth-child(3) {
+.navbar-toggler .line:nth-child(3) {
     bottom: 0;
 }
 
