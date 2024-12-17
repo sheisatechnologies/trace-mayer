@@ -408,6 +408,25 @@ body {
     color: white;
 }
 
+.social-icons i {
+   width: 37px;
+   height: 52px;
+   
+}
+
+
+.social-icons a {
+    
+    color: #fff; /* Default white color for icons */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: #ffa500; /* Hover color */
+}
+
+
 
 
 
